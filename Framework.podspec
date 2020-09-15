@@ -6,7 +6,7 @@ s.license = { :type => 'Copyright', :text => 'Copyright 2006-2020 x.com Inc. All
 s.homepage = 'x.com'
 s.source = { :git =>'https://github.com/lijingcheng/Framework.git' }
 s.summary = '框架.'
-#s.static_framework = true
+s.static_framework = true
 s.swift_version = '5.2'
 s.ios.deployment_target = '10.0'
 s.module_map = 'Framework/Framework.modulemap'
