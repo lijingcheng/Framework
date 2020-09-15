@@ -168,7 +168,9 @@ public class RouterService: NSObject {
                 }
             }
         } else {
-            viewController = UIStoryboard(name: storyboard, bundle: bundle).instantiateViewController(withIdentifier: name)
+            try? ObjC.catchException {
+                viewController = UIStoryboard(name: storyboard, bundle: bundle).instantiateViewController(withIdentifier: name)
+            }
         }
         
         return viewController

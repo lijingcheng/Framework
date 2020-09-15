@@ -20,6 +20,7 @@
 		F38211CD25109A1E00F3D032 /* UIWindowExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38211CC25109A1E00F3D032 /* UIWindowExt.swift */; };
 		F38211D125109BDB00F3D032 /* Framework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = F38211D025109BDB00F3D032 /* Framework.podspec */; };
 		F38212512510B94000F3D032 /* BundleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38212502510B93F00F3D032 /* BundleExt.swift */; };
+		F382125D2510C62200F3D032 /* Objc.m in Sources */ = {isa = PBXBuildFile; fileRef = F382125C2510C62200F3D032 /* Objc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,9 @@
 		F38211D025109BDB00F3D032 /* Framework.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = Framework.podspec; sourceTree = SOURCE_ROOT; };
 		F38211D225109D3100F3D032 /* Framework.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = Framework.modulemap; sourceTree = "<group>"; };
 		F38212502510B93F00F3D032 /* BundleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExt.swift; sourceTree = "<group>"; };
+		F382125A2510C62100F3D032 /* Framework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Framework-Bridging-Header.h"; sourceTree = "<group>"; };
+		F382125B2510C62200F3D032 /* Objc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objc.h; sourceTree = "<group>"; };
+		F382125C2510C62200F3D032 /* Objc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Objc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				F3821175251095D200F3D032 /* AppDelegate.swift */,
 				F3821179251095D200F3D032 /* ViewController.swift */,
 				F38211D025109BDB00F3D032 /* Framework.podspec */,
+				F382125A2510C62100F3D032 /* Framework-Bridging-Header.h */,
 				F38211D225109D3100F3D032 /* Framework.modulemap */,
 				F382117B251095D200F3D032 /* Main.storyboard */,
 				F382117E251095D500F3D032 /* Assets.xcassets */,
@@ -115,6 +120,8 @@
 				F38211CC25109A1E00F3D032 /* UIWindowExt.swift */,
 				F38211C62510985400F3D032 /* NetworkService.swift */,
 				F38211CA251099FC00F3D032 /* RouterService.swift */,
+				F382125B2510C62200F3D032 /* Objc.h */,
+				F382125C2510C62200F3D032 /* Objc.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 				TargetAttributes = {
 					F3821171251095D200F3D032 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -217,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F382125D2510C62200F3D032 /* Objc.m in Sources */,
 				F38211CB251099FC00F3D032 /* RouterService.swift in Sources */,
 				F38211C72510985400F3D032 /* NetworkService.swift in Sources */,
 				F382117A251095D200F3D032 /* ViewController.swift in Sources */,
@@ -369,6 +378,7 @@
 			baseConfigurationReference = 949E34BE6A81E596F380D72A /* Pods-Framework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NJQ6UMZKW;
 				INFOPLIST_FILE = Framework/Info.plist;
@@ -379,6 +389,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.x.Framework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Framework/Framework-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,6 +401,7 @@
 			baseConfigurationReference = BDACF0C74AE369BCC4AA0871 /* Pods-Framework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NJQ6UMZKW;
 				INFOPLIST_FILE = Framework/Info.plist;
@@ -399,6 +412,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.x.Framework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Framework/Framework-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

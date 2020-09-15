@@ -1,3 +1,5 @@
 framework module Framework {
+    header "ObjC.h"
+    
     export *
 }
