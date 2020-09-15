@@ -9,7 +9,8 @@ s.summary = '框架.'
 s.static_framework = true
 s.swift_version = '5.2'
 s.ios.deployment_target = '10.0'
-s.source_files = 'Framework/Framework-Swift.h', 'Framework/Class/**/*.swift'
+s.module_map = 'Framework/Framework.modulemap'
+s.source_files = 'Framework/Framework-Swift.h', 'Framework/Class/*.swift'
 
 s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 

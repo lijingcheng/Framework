@@ -1,0 +1,5 @@
+framework module Framework {
+    header "Framework-Swift.h"
+    
+    export *
+}

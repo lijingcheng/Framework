@@ -38,6 +38,7 @@
 		F38211CA251099FC00F3D032 /* RouterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterService.swift; sourceTree = "<group>"; };
 		F38211CC25109A1E00F3D032 /* UIWindowExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExt.swift; sourceTree = "<group>"; };
 		F38211D025109BDB00F3D032 /* Framework.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = Framework.podspec; sourceTree = SOURCE_ROOT; };
+		F38211D225109D3100F3D032 /* Framework.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = Framework.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 				F3821175251095D200F3D032 /* AppDelegate.swift */,
 				F3821179251095D200F3D032 /* ViewController.swift */,
 				F38211D025109BDB00F3D032 /* Framework.podspec */,
+				F38211D225109D3100F3D032 /* Framework.modulemap */,
 				F382117B251095D200F3D032 /* Main.storyboard */,
 				F382117E251095D500F3D032 /* Assets.xcassets */,
 				F3821180251095D500F3D032 /* LaunchScreen.storyboard */,
