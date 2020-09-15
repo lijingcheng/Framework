@@ -19,6 +19,7 @@
 		F38211CB251099FC00F3D032 /* RouterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38211CA251099FC00F3D032 /* RouterService.swift */; };
 		F38211CD25109A1E00F3D032 /* UIWindowExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38211CC25109A1E00F3D032 /* UIWindowExt.swift */; };
 		F38211D125109BDB00F3D032 /* Framework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = F38211D025109BDB00F3D032 /* Framework.podspec */; };
+		F38212512510B94000F3D032 /* BundleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38212502510B93F00F3D032 /* BundleExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +40,7 @@
 		F38211CC25109A1E00F3D032 /* UIWindowExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExt.swift; sourceTree = "<group>"; };
 		F38211D025109BDB00F3D032 /* Framework.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = Framework.podspec; sourceTree = SOURCE_ROOT; };
 		F38211D225109D3100F3D032 /* Framework.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = Framework.modulemap; sourceTree = "<group>"; };
-		F38211E72510A87700F3D032 /* Framework-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Framework-Swift.h"; sourceTree = "<group>"; };
+		F38212502510B93F00F3D032 /* BundleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +97,6 @@
 				F3821175251095D200F3D032 /* AppDelegate.swift */,
 				F3821179251095D200F3D032 /* ViewController.swift */,
 				F38211D025109BDB00F3D032 /* Framework.podspec */,
-				F38211E72510A87700F3D032 /* Framework-Swift.h */,
 				F38211D225109D3100F3D032 /* Framework.modulemap */,
 				F382117B251095D200F3D032 /* Main.storyboard */,
 				F382117E251095D500F3D032 /* Assets.xcassets */,
@@ -111,6 +111,7 @@
 			children = (
 				F38211C42510982400F3D032 /* App.swift */,
 				F38211C82510994900F3D032 /* DateExt.swift */,
+				F38212502510B93F00F3D032 /* BundleExt.swift */,
 				F38211CC25109A1E00F3D032 /* UIWindowExt.swift */,
 				F38211C62510985400F3D032 /* NetworkService.swift */,
 				F38211CA251099FC00F3D032 /* RouterService.swift */,
@@ -221,6 +222,7 @@
 				F382117A251095D200F3D032 /* ViewController.swift in Sources */,
 				F38211CD25109A1E00F3D032 /* UIWindowExt.swift in Sources */,
 				F38211C52510982400F3D032 /* App.swift in Sources */,
+				F38212512510B94000F3D032 /* BundleExt.swift in Sources */,
 				F3821176251095D200F3D032 /* AppDelegate.swift in Sources */,
 				F38211C92510994900F3D032 /* DateExt.swift in Sources */,
 			);
